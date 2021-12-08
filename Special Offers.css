@@ -1,0 +1,189 @@
+body {
+	background: black;
+	color: white;
+}
+
+.tab {
+	margin-left: 130px;
+	font-size: 30px;
+}
+
+.b2 {
+	font-family: 'Poppins', Sans-serif;
+	border-radius: 12px;
+	font-weight: lighter;
+	margin-top: 20px;
+	margin-left: 100px;
+	font-size: 18px;
+	text-align: center;
+	cursor: pointer;
+	outline: none;
+	border-color:whitesmoke;
+	color: #fab7b7;
+}
+
+.b2:hover {
+	background: #fab7b7;
+	color: white;
+}
+
+.b1 {
+	font-family: 'Poppins', Sans-serif;
+	font-weight: lighter;
+	border-radius: 12px;
+	margin-top: 20px;
+	padding-left: 28px;
+	padding-right: 28px;
+	margin-left: 80px;
+	font-size: 18px;
+	text-align: center;
+	cursor: pointer;
+	outline: none;
+	border-color: white;
+	color: #fab7b7;
+}
+
+.b1:hover {
+	background: #fab7b7;
+	color: white;
+}
+
+label::before {
+	-webkit-transition: .5s all ease;
+	transition: .5s all ease;
+}
+
+input[type="checkbox"] {
+	opacity: 0;
+	margin-top: 0;
+	vertical-align: middle;
+	z-index: -1;
+}
+
+label {
+	position: relative;
+	margin-right: 1em;
+	padding-left: 2em;
+	padding-top: 0.5em;
+	padding-right: 1em;
+	line-height: 2;
+	cursor: pointer;
+}
+
+label:before {
+	box-sizing: border-box;
+	content: " ";
+	position: absolute;
+	top: 0.3em;
+	left: 0;
+	display: block;
+	width: 1.4em;
+	height: 1.4em;
+	border: 2px solid white;
+	border-color: #fab7b7;
+	border-radius: .25em;
+	z-index: -1;
+}
+
+
+/* Checked */
+
+input[type="checkbox"]:checked + label {
+	padding-left: 1em;
+	color: black;
+}
+
+input[type="checkbox"]:checked + label:before {
+	top: 0;
+	width: 100%;
+	height: 2em;
+	background: #fab7b7;
+}
+
+.group input {
+	float: left;
+	width: 20px;
+	margin-left: -20px;
+	margin-top: 6px; /* vertically align radio with text*/
+	padding: 0;
+	-webkit-appearance: radio;
+}
+
+.group {
+	display: block;
+	padding: 5px 5px 5px 5px;
+	clear: both;
+}
+.h1{
+    margin:5% 40%;
+    color: #fab7b7;
+    font-size: 2em;
+  }
+
+/*Banner*/
+  span{
+  text-align: center;
+  font: 4em "Oswald", sans-serif;
+  letter-spacing: 0;
+  padding: .25em 0 .325em;
+  display: block;
+  margin: 0 auto;
+  text-shadow: 0 0 80px rgba(255,255,255,.5);
+/* Clip Background Image */
+  background: url(http://f.cl.ly/items/010q3E1u3p2Q0j1L1S1o/animated_text_fill.png) repeat-y;
+  -webkit-background-clip: text;
+  background-clip: text;
+/* Animate Background Image */
+  -webkit-text-fill-color: transparent;
+  -webkit-animation: aitf 80s linear infinite;
+/* Activate hardware acceleration for smoother animations */
+  -webkit-transform: translate3d(0,0,0);
+  -webkit-backface-visibility: hidden;
+}
+
+
+/* Animate Background Image */
+
+@-webkit-keyframes aitf {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  100% {
+    background-position: 100% 50%;
+  }
+}
+/*Banner*/
+
+/*FadeF*/
+@keyframes diss {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.fourth-text {
+  font-size: 1.5em;
+  opacity: 0;
+  color: white;
+  animation-name: diss;
+  animation-delay: 0.5s;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+/*FadeF*/
+
+@media(max-width: 767px){
+	.fourth-text{
+	font-size: 1em;		
+	}
+}
+@media screen and (max-width: 479px) {
+	.fourt-text{
+		font-size: 0.8em;
+	}
+}
